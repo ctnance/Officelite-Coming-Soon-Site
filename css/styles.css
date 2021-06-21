@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+:root {
+    --bg-light-blue: hsl(228, 100%, 75%);
+    --bg-medium-blue: hsl(228, 100%, 66%);
+    --bg-dark-blue: hsl(228, 22%, 26%);
+    --bg-dark: hsl(229, 22%, 19%);
+    --bg-gray: hsl(227, 13%, 52%);
+    --bg-orange: hsl(0, 83%, 65%);
+}
+
+html {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: "Kumbh Sans";
+}
+
+* {
+    box-sizing: inherit;
+}
