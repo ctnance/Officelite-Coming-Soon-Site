@@ -1,36 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
 
-    <title>Frontend Mentor | Officelite coming soon site</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+
+  <title>Frontend Mentor | Officelite coming soon site</title>
 </head>
+
 <body>
-  Work smarter. Save time.
+  <header>
+    <img src="assets/shared/logo.svg">
+  </header>
 
-  Easily manage your projects. Get on the list and receive in-app perks available only to 
-  early subscribers. We are moving into final development and getting ready for official launch soon.
+  <main>
+    <h1>Work smarter. Save time.</h1>
 
-  <!-- If you're choosing to make this date dynamic, set it to 30 days in the future from the moment the visitor views the page -->
-  Coming 4 Nov 2020
+    Easily manage your projects. Get on the list and receive in-app perks available only to
+    early subscribers. We are moving into final development and getting ready for official launch soon.
 
-  <!-- If you're choosing to make this timer dynamic, have it countdown from the date you set above -->
-  47 Days
-  07 Hours
-  56 Min
-  14 Sec
+    <section class="timer">
+      <!-- If you're choosing to make this date dynamic, set it to 30 days in the future from the moment the visitor views the page -->
+      <p>Coming <span class="date">4 Nov 2020</span></p>
 
-  Name
-  Email Address
-  Basic Pack Free
-  Basic Pack Free
-  Pro Pack $9.99
-  Ultimate Pack $19.99
-  Phone Number
-  Company
-  Get on the list
+      <!-- If you're choosing to make this timer dynamic, have it countdown from the date you set above -->
+      <div class="time-element days">47 Days</div>
+      <div class="time-element hours">07 Hours</div>
+      <div class="time-element min">56 Min</div>
+      <div class="time-element sec">14 Sec</div>
+    </section>
+
+    <form>
+      <ul>
+        <li><label for="form-name"></label> <input type="text" name="form-name" id="form-name" placeholder="Name"></li>
+        <li><label for="email"></label> <input type="email" name="email" id="email" placeholder="Email Address"></li>
+        
+        <li>
+          <label for="pricing-option"></label> 
+          <select name="pricing-option" id="pricing-option">
+            <option>Basic Pack <span>Free</span></option>
+            <option>Pro Pack <span>$9.99</span></option>
+            <option>Ultimate Pack <span>$19.99</span></option>
+          </select>
+        </li>
+
+        <li><label for="tel"></label> <input type="tel" name="tel" id="tel" placeholder="Phone Number"></li>
+        <li><label for="company"></label> <input type="text" name="company" id="company" placeholder="Company"></li>
+      </ul>
+
+      <input type="submit" value="Get on the list">
+    </form>
+  </main>
+
 </body>
+
 </html>

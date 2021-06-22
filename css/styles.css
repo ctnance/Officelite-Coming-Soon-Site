@@ -26,3 +26,8 @@ body {
 * {
     box-sizing: inherit;
 }
+
+.pricing-card:nth-child(2) {
+    background-color: var(--bg-medium-blue);
+    color: white;
+}
