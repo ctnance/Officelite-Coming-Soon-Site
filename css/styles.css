@@ -3,153 +3,170 @@
 /* VARIABLES */
 
 :root {
-    --bg-light-blue: #797c8a;
-    --bg-medium-blue: #5274ff;
-    --bg-medium-blue-hover: #8099ff;
-    --bg-dark-blue: #343a51;
-    --bg-dark: #262a3b;
-    --bg-gray: #757c95;
-    --bg-orange: #f05c5c;
-    --bg-offwhite: #F2F2F2;
-    --bg-white: #FFF;
+  --bg-light-blue: #797c8a;
+  --bg-medium-blue: #5274ff;
+  --bg-medium-blue-hover: #8099ff;
+  --bg-dark-blue: #343a51;
+  --bg-dark: #262a3b;
+  --bg-gray: #757c95;
+  --bg-orange: #f05c5c;
+  --bg-offwhite: #f2f2f2;
+  --bg-white: #fff;
 }
 
 /* HTML STYLES */
 
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html,
 body {
-    height: 100%;
-    margin: 0;
+  height: 100%;
+  margin: 0;
 }
 
 body {
-    background-color: var(--bg-offwhite);
-    font-family: "Kumbh Sans";
+  background-color: var(--bg-offwhite);
+  font-family: "Kumbh Sans", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 * {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 header {
-    background: url(../assets/home/bg-pattern-header.svg) 0 0 no-repeat;
+  background: url(../assets/home/bg-pattern-header.svg) bottom center no-repeat;
+  background-size: 122vw;
+  text-align: center;
+  padding-top: 2.875em;
 }
 
 h1 {
-    font-size: 2.5rem;
+  font-size: 2.5rem;
 }
 
 img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 ul {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
 
-/* link styles */
-button:link, button:visited {
-    background-color: var(--bg-medium-blue);
-    color: var(--bg-white);
+/* LINK STYLES */
+button:link,
+button:visited {
+  background-color: var(--bg-medium-blue);
+  color: var(--bg-white);
 }
 button:focus,
 button:hover,
 button:active {
-    background-color: var(--bg-medium-blue-hover);
-    color: var(--bg-white);
+  background-color: var(--bg-medium-blue-hover);
+  color: var(--bg-white);
 }
 
 button {
-    background-color: var(--bg-medium-blue);
-    color: var(--bg-white);
-    font-weight: 700;
-    border: none;
-    border-radius: 2em;
-    padding: 1em 2.5em;
-    cursor: pointer;
+  background-color: var(--bg-medium-blue);
+  color: var(--bg-white);
+  font-weight: 700;
+  border: none;
+  border-radius: 2em;
+  padding: 1em 2.5em;
+  cursor: pointer;
 }
 
 /* CUSTOM STYLES */
 
-main {
-    margin: 0 1.5rem;
-    text-align: center;
-}
-
-/* Header */
+/* HEADER */
 
 .img-wrapper {
-    width: 100%;
+  width: 100%;
 }
 
 .img-wrapper img {
-    margin: 0 auto;
+  margin: 0 auto;
+}
+
+/* .logo {
+  margin-bottom: 5em;
+} */
+
+.chart-img {
+  position: relative;
+  top: 5em;
 }
 
 .chart-img img {
-    width: 45vw;
+  width: 171px;
+}
+
+/* MAIN */
+
+main {
+  margin: 0 1.5rem;
+  text-align: center;
 }
 
 /* PRICING CARDS */
 
 .pricing-card {
-    padding: 2.5em;
+  padding: 2.5em;
 }
 
 .pricing-card h2 {
-    margin :0;
+  margin: 0;
 }
 
 .pricing-card .price {
-    font-size: 3.5em;
-    font-weight: 700;
+  font-size: 3.5em;
+  font-weight: 700;
 }
 
 .pricing-card {
-    background-color: var(--bg-white);
+  background-color: var(--bg-white);
 }
 
 .pricing-card:nth-child(2) {
-    background-color: var(--bg-medium-blue);
-    background-image: url(../assets/home/bg-pattern-pricing.svg);
-    background-size: contain;
-    color: var(--bg-white);
+  background-color: var(--bg-medium-blue);
+  background-image: url(../assets/home/bg-pattern-pricing.svg);
+  background-size: contain;
+  color: var(--bg-white);
 }
 
 /* TIMER STYLES */
 
 .timer p {
-    color: var(--bg-white);
-    text-transform: uppercase;
-    letter-spacing: 5px;
+  color: var(--bg-white);
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: 700;
 }
 
 .timer .date {
-    color: var(--bg-medium-blue)
+  color: var(--bg-medium-blue);
 }
 
 .time-elements {
-    display: flex;
-    justify-content: center;
-    gap: .8em;
+  display: flex;
+  justify-content: center;
+  gap: 0.8em;
 }
 
 .time-element {
-    background-color: var(--bg-dark-blue);
-    color: var(--bg-gray);
-    border-radius: .25em;
-    display: flex;
-    flex-direction: column;
-    padding: 1em;
+  background-color: var(--bg-dark-blue);
+  color: var(--bg-gray);
+  border-radius: 0.25em;
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  font-weight: 700;
+  text-transform: lowercase;
 }
 
 .time-unit {
-    color: var(--bg-white);
-    font-size: 2rem;
-    font-weight: 700;
+  color: var(--bg-white);
+  font-size: 2rem;
 }
