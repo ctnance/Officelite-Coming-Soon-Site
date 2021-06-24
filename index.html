@@ -18,8 +18,14 @@
 </head>
 
 <body>
+
   <header>
-    <img src="assets/shared/logo.svg">
+    <div class="img-wrapper logo">
+      <a href="./index.html"><img src="assets/shared/logo.svg" alt="officelite"></a>
+    </div>
+    <div class="img-wrapper chart-img">
+      <img src="assets/home/illustration-charts.svg" alt="Illustration Charts">
+    </div>
   </header>
 
   <main>
@@ -29,7 +35,7 @@
       Say goodbye to inefficient juggling of multiple apps, teams, and projects. Officelite is the new
       collaboration platform built with an intuitive interface to improve productivity.
     </p>
-    <button>Get Started</button>
+    <button onclick="window.location.href='./sign-up.html';">Get Started</button>
 
     <section class="pricing-cards">
       <div class="pricing-card">
@@ -41,7 +47,7 @@
           <li>2 gb storage</li>
           <li>Great security and support</li>
         </ul>
-        <button>Try for Free</button>
+        <button onclick="window.location.href='./sign-up.html';">Try for Free</button>
       </div>
 
       <div class="pricing-card">
@@ -53,7 +59,7 @@
           <li>50 gb storage</li>
           <li>More control and insights</li>
         </ul>
-        <button>Try for Free</button>
+        <button onclick="window.location.href='./sign-up.html';">Try for Free</button>
       </div>
 
       <div class="pricing-card">
@@ -65,7 +71,7 @@
           <li>100 gb storage</li>
           <li>VIP support</li>
         </ul>
-        <button>Try for Free</button>
+        <button onclick="window.location.href='./sign-up.html';">Try for Free</button>
       </div>
     </section>
 
@@ -74,14 +80,15 @@
       <p>Coming <span class="date">4 Nov 2020</span></p>
 
       <!-- If you're choosing to make this timer dynamic, have it countdown from the date you set above -->
-      <div class="time-element days">47 Days</div>
-      <div class="time-element hours">07 Hours</div>
-      <div class="time-element min">56 Min</div>
-      <div class="time-element sec">14 Sec</div>
+      <div class="time-elements">
+        <div class="time-element days"><span class="time-unit days">47</span> Days</div>
+        <div class="time-element hours"><span class="time-unit hours">07</span> Hours</div>
+        <div class="time-element min"><span class="time-unit minutes">56</span> Min</div>
+        <div class="time-element sec"><span class="time-unit seconds">14</span> Sec</div>
+      </div>
 
-      <button>Get Started</button>
+      <button onclick="window.location.href='./sign-up.html';">Get Started</button>
     </section>
-
 
   </main>
 
