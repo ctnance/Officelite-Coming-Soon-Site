@@ -130,20 +130,10 @@ main::after {
 /* PRICING CARDS */
 
 .pricing-card {
-  padding: 2.5em;
-}
-
-.pricing-card h2 {
-  margin: 0;
-}
-
-.pricing-card .price {
-  font-size: 3.5em;
-  font-weight: 700;
-}
-
-.pricing-card {
   background-color: var(--bg-white);
+  border-radius: 0.5em;
+  padding: 2.5em;
+  margin-bottom: 2em;
 }
 
 .pricing-card:nth-child(2) {
@@ -151,6 +141,31 @@ main::after {
   background-size: 880px;
   background-color: var(--bg-medium-blue);
   color: var(--bg-white);
+}
+
+.pricing-card h2 {
+  margin: 0;
+  font-size: 1.25rem;
+  margin-bottom: 2em;
+}
+
+.pricing-card .tier-description {
+  margin: 0;
+}
+
+.pricing-card h3 {
+  font-size: 3.5em;
+  font-weight: 700;
+  margin: 0;
+}
+
+.pricing-card ul {
+  margin: 3.5em 0 2em;
+  line-height: 1.75em;
+}
+
+.pricing-card li {
+  margin-bottom: 1em;
 }
 
 /* TIMER STYLES */
