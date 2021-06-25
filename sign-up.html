@@ -18,52 +18,53 @@
 </head>
 
 <body>
-  <header>
-    <a href="./index.html"><img src="assets/shared/logo.svg"></a>
-  </header>
+  <div id="root">
+    <header>
+      <a href="./index.html"><img src="assets/shared/logo.svg"></a>
+    </header>
 
-  <main>
-    <h1>Work smarter. Save time.</h1>
+    <main>
+      <h1>Work smarter. Save time.</h1>
 
-    Easily manage your projects. Get on the list and receive in-app perks available only to
-    early subscribers. We are moving into final development and getting ready for official launch soon.
+      Easily manage your projects. Get on the list and receive in-app perks available only to
+      early subscribers. We are moving into final development and getting ready for official launch soon.
 
-    <section class="timer">
-      <!-- If you're choosing to make this date dynamic, set it to 30 days in the future from the moment the visitor views the page -->
-      <p>Coming <span class="date">4 Nov 2020</span></p>
+      <section class="timer">
+        <!-- If you're choosing to make this date dynamic, set it to 30 days in the future from the moment the visitor views the page -->
+        <p>Coming <span class="date">4 Nov 2020</span></p>
 
-      <!-- If you're choosing to make this timer dynamic, have it countdown from the date you set above -->
-      <div class="time-elements">
-        <div class="time-element days"><span class="time-unit days">47</span> Days</div>
-        <div class="time-element hours"><span class="time-unit hours">07</span> Hours</div>
-        <div class="time-element min"><span class="time-unit minutes">56</span> Min</div>
-        <div class="time-element sec"><span class="time-unit seconds">14</span> Sec</div>
-      </div>
-    </section>
+        <!-- If you're choosing to make this timer dynamic, have it countdown from the date you set above -->
+        <div class="time-elements">
+          <div class="time-element days"><span class="time-unit days">47</span> Days</div>
+          <div class="time-element hours"><span class="time-unit hours">07</span> Hours</div>
+          <div class="time-element min"><span class="time-unit minutes">56</span> Min</div>
+          <div class="time-element sec"><span class="time-unit seconds">14</span> Sec</div>
+        </div>
+      </section>
 
-    <form>
-      <ul>
-        <li><label for="form-name"></label> <input type="text" name="form-name" id="form-name" placeholder="Name"></li>
-        <li><label for="email"></label> <input type="email" name="email" id="email" placeholder="Email Address"></li>
+      <form>
+        <ul>
+          <li><label for="form-name"></label> <input type="text" name="form-name" id="form-name" placeholder="Name">
+          </li>
+          <li><label for="email"></label> <input type="email" name="email" id="email" placeholder="Email Address"></li>
 
-        <li>
-          <label for="pricing-option"></label>
-          <select name="pricing-option" id="pricing-option">
-            <option>Basic Pack <span>Free</span></option>
-            <option>Pro Pack <span>$9.99</span></option>
-            <option>Ultimate Pack <span>$19.99</span></option>
-          </select>
-        </li>
+          <li>
+            <label for="pricing-option"></label>
+            <select name="pricing-option" id="pricing-option">
+              <option>Basic Pack <span>Free</span></option>
+              <option>Pro Pack <span>$9.99</span></option>
+              <option>Ultimate Pack <span>$19.99</span></option>
+            </select>
+          </li>
 
-        <li><label for="tel"></label> <input type="tel" name="tel" id="tel" placeholder="Phone Number"></li>
-        <li><label for="company"></label> <input type="text" name="company" id="company" placeholder="Company"></li>
-      </ul>
+          <li><label for="tel"></label> <input type="tel" name="tel" id="tel" placeholder="Phone Number"></li>
+          <li><label for="company"></label> <input type="text" name="company" id="company" placeholder="Company"></li>
+        </ul>
 
-      <button type="submit">Get on the list</button>
-    </form>
-  </main>
-
-  <footer></footer>
+        <button type="submit">Get on the list</button>
+      </form>
+    </main>
+  </div>
 </body>
 
 </html>
