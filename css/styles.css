@@ -4,15 +4,19 @@
 
 :root {
   /* Colors */
-  --bg-light-blue: #797c8a;
-  --bg-medium-blue: #5274ff;
-  --bg-medium-blue-hover: #8099ff;
+  /* --bg-light-blue: #797d8b; */
+  --bg-light-blue: hsl(227, 100%, 95%);
+  --bg-light-blue-hover: hsl(227, 100%, 88%);
+  --bg-medium-blue: hsl(228, 100%, 66%);
+  --bg-medium-blue-hover: hsl(228, 100%, 75%);
+  --bg: hsla(228, 100%, 66%, 1);
   --bg-dark-blue: #343a51;
   --bg-dark: #262a3b;
   --bg-gray: #757c95;
   --bg-orange: #f05c5c;
   --bg-offwhite: #f2f2f2;
-  --bg-white: #fff;
+  --bg-white: #ffffff;
+  --bg-white-hover: #e8e8e8;
 
   /* Measurements */
   --footer-size: 78em;
@@ -70,6 +74,7 @@ button:active {
   color: var(--bg-white);
 }
 
+/* Default Button Style */
 button {
   background-color: var(--bg-medium-blue);
   color: var(--bg-white);
@@ -78,6 +83,42 @@ button {
   border-radius: 2em;
   padding: 1em 2.5em;
   cursor: pointer;
+}
+
+.btn-medium {
+  background-color: var(--bg-light-blue);
+  color: var(--bg-medium-blue);
+}
+
+/* Medium Button Style */
+.btn-medium:link,
+.btn-medium:visited {
+  background-color: var(--bg-light-blue);
+  color: var(--bg-medium-blue);
+}
+.btn-medium:focus,
+.btn-medium:hover,
+.btn-medium:active {
+  background-color: var(--bg-light-blue-hover);
+  color: var(--bg-medium-blue);
+}
+
+/* Light Button Style */
+.btn-light {
+  background-color: var(--bg-white);
+  color: var(--bg-medium-blue);
+}
+
+.btn-light:link,
+.btn-light:visited {
+  background-color: var(--bg-white);
+  color: var(--bg-medium-blue);
+}
+.btn-light:focus,
+.btn-light:hover,
+.btn-light:active {
+  background-color: var(--bg-white-hover);
+  color: var(--bg-medium-blue);
 }
 
 /* CUSTOM STYLES */
