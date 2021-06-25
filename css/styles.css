@@ -3,6 +3,7 @@
 /* VARIABLES */
 
 :root {
+  /* Colors */
   --bg-light-blue: #797c8a;
   --bg-medium-blue: #5274ff;
   --bg-medium-blue-hover: #8099ff;
@@ -12,6 +13,9 @@
   --bg-orange: #f05c5c;
   --bg-offwhite: #f2f2f2;
   --bg-white: #fff;
+
+  /* Measurements */
+  --footer-size: 78em;
 }
 
 /* HTML STYLES */
@@ -36,8 +40,6 @@ body {
 }
 
 header {
-  background: url(../assets/home/bg-pattern-header.svg) bottom center no-repeat;
-  background-size: 122vw;
   text-align: center;
   padding-top: 2.875em;
 }
@@ -80,6 +82,12 @@ button {
 
 /* CUSTOM STYLES */
 
+#root {
+  background: url(../assets/home/bg-pattern-header.svg) top -170px center no-repeat;
+  background-size: 122vw;
+  position: relative;
+}
+
 /* HEADER */
 
 .img-wrapper {
@@ -90,13 +98,8 @@ button {
   margin: 0 auto;
 }
 
-/* .logo {
+.logo {
   margin-bottom: 5em;
-} */
-
-.chart-img {
-  position: relative;
-  top: 5em;
 }
 
 .chart-img img {
@@ -106,8 +109,22 @@ button {
 /* MAIN */
 
 main {
-  margin: 0 1.5rem;
+  padding: 0 1.5rem 6.25rem;
   text-align: center;
+}
+
+main::after {
+  content: "";
+  background: url(../assets/home/bg-pattern-footer.svg) bottom -110px center no-repeat;
+  background-size: 1202px;
+  background-color: var(--bg-dark);
+  width: 100%;
+  height: var(--footer-size);
+  position: absolute;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
 }
 
 /* PRICING CARDS */
@@ -130,9 +147,9 @@ main {
 }
 
 .pricing-card:nth-child(2) {
+  background: url(../assets/home/bg-pattern-pricing.svg) bottom center no-repeat;
+  background-size: 880px;
   background-color: var(--bg-medium-blue);
-  background-image: url(../assets/home/bg-pattern-pricing.svg);
-  background-size: contain;
   color: var(--bg-white);
 }
 
@@ -162,6 +179,7 @@ main {
   display: flex;
   flex-direction: column;
   padding: 1em;
+  font-size: 0.75rem;
   font-weight: 700;
   text-transform: lowercase;
 }
