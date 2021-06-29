@@ -204,6 +204,22 @@ main::after {
   z-index: -1;
 }
 
+.introduction {
+  margin-bottom: 6.25em;
+}
+
+.introduction > h1 {
+  color: var(--bg-dark);
+  margin-top: 1.35em;
+  margin-bottom: 0;
+}
+
+.introduction > p {
+  color: var(--bg-gray);
+  line-height: 1.625em;
+  margin: 1.5em 0;
+}
+
 /* PRICING CARDS */
 
 .pricing-cards {
@@ -217,6 +233,10 @@ main::after {
   margin-bottom: 2em;
 }
 
+.pricing-card:nth-child(odd) {
+  color: var(--bg-dark);
+}
+
 .pricing-card:nth-child(even) {
   background: url(../assets/home/bg-pattern-pricing.svg) bottom center no-repeat;
   background-size: 880px;
@@ -224,8 +244,8 @@ main::after {
   color: var(--bg-white);
 }
 
-.pricing-card:nth-child(2) h2, 
-.pricing-card:nth-child(2) h3 {
+.pricing-card:nth-child(even) h2, 
+.pricing-card:nth-child(even) h3 {
   color: var(--bg-white);
 }
 
