@@ -204,6 +204,10 @@ main::after {
   z-index: -1;
 }
 
+.sign-up::after {
+  height: 36vh;
+}
+
 .introduction {
   margin-bottom: 6.25em;
 }
@@ -294,6 +298,10 @@ main::after {
   margin-bottom: 1em;
 }
 
+.light p {
+  color: var(--bg-dark);
+}
+
 .timer .date {
   color: var(--bg-medium-blue);
 }
@@ -318,8 +326,16 @@ main::after {
   line-height: 1.75rem;
 }
 
+.light .time-element {
+  background-color: var(--bg-light-blue);
+}
+
 .time-unit {
   display: inline-block;
   color: var(--bg-white);
   font-size: 2rem;
+}
+
+.light .time-unit {
+  color: var(--bg-medium-blue)
 }
