@@ -79,6 +79,10 @@ form {
   padding: 1.5em;
 }
 
+form ul {
+  margin: 0;
+}
+
 input,
 select {
   font-size: inherit;
@@ -88,12 +92,12 @@ select {
   padding: 1em;
 }
 
-li:first-child input {
-  padding-top: 0;
-}
-
 select {
   font-weight: bold;
+}
+
+form button {
+  width: 100%;
 }
 
 /* LINK STYLES */
@@ -180,7 +184,7 @@ button {
 }
 
 .chart-img img {
-  width: 171px;
+  max-width: 171px;
 }
 
 /* MAIN */
@@ -198,7 +202,6 @@ main::after {
   width: 100%;
   height: var(--footer-size);
   position: absolute;
-  position: absolute;
   bottom: 0;
   left: 0;
   z-index: -1;
@@ -212,13 +215,13 @@ main::after {
   margin-bottom: 6.25em;
 }
 
-.introduction > h1 {
+.intro-pitch > h1 {
   color: var(--bg-dark);
   margin-top: 1.35em;
   margin-bottom: 0;
 }
 
-.introduction > p {
+.intro-pitch > p {
   color: var(--bg-gray);
   line-height: 1.625em;
   margin: 1.5em 0;
@@ -292,6 +295,7 @@ main::after {
 .timer p {
   color: var(--bg-white);
   text-transform: uppercase;
+  text-align: center;
   letter-spacing: 5px;
   line-height: 3em;
   font-weight: 700;
@@ -334,8 +338,45 @@ main::after {
   display: inline-block;
   color: var(--bg-white);
   font-size: 2rem;
+  line-height: 48px;
 }
 
 .light .time-unit {
   color: var(--bg-medium-blue)
+}
+
+@media screen and (min-width: 768px) {
+  #root {
+    background: url(../assets/home/bg-pattern-header.svg) top -164px right -293px no-repeat;
+    background-size: 86vw;
+    position: relative;
+  }
+
+  header {
+    text-align: left;
+    padding: 4.5em 2.5em 0;
+  }
+
+  main {
+    padding: 0 2.5rem 6.25rem;
+    text-align: center;
+  }
+
+  .introduction {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+  }
+
+  .chart-img {
+    order: 1;
+  }
+
+  .chart-img img {
+    max-width: 281px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  
 }
