@@ -20,7 +20,8 @@
   --bg-white-hover: #e8e8e8;
 
   /* Measurements */
-  --footer-size: 78em;
+  --mobile-footer-size: 78em;
+  --tablet-footer-size: 61.625em;
 }
 
 /* HTML STYLES */
@@ -199,7 +200,7 @@ main::after {
   background-size: 1202px;
   background-color: var(--bg-dark);
   width: 100%;
-  height: var(--footer-size);
+  height: var(--mobile-footer-size);
   position: absolute;
   bottom: 0;
   left: 0;
@@ -211,16 +212,15 @@ main::after {
 }
 
 .introduction {
-  margin-bottom: 6.25em;
+  margin: 1.35em 0 6.25em;
 }
 
-.intro-pitch > h1 {
+.introduction h1 {
   color: var(--bg-dark);
-  margin-top: 1.35em;
-  margin-bottom: 0;
+  margin: 0;
 }
 
-.intro-pitch > p {
+.introduction  p {
   color: var(--bg-gray);
   line-height: 1.625em;
   margin: 1.5em 0;
@@ -361,15 +361,34 @@ main::after {
     text-align: center;
   }
 
+  main::after {
+    content: "";
+    background: url(../assets/home/bg-pattern-footer.svg) bottom -483px center no-repeat,
+                var(--bg-dark);
+    background-size: 1454px;
+    height: var(--tablet-footer-size);
+  }
+
+  form {
+    max-width: 58vw;
+    margin: 0 auto;
+  }
+
   .introduction {
     display: flex;
     flex-direction: row;
     align-items: center;
+    gap: 4em;
     text-align: left;
+    margin-bottom: 8.75em;
+  }
+
+  .introduction h1 {
+    width: 8.5em;
   }
 
   .introduction p {
-    width: clamp(6em, 26em, 26em);
+    width: clamp(6em, 21.5em, 21.5em);
   }
 
   .chart-img {
@@ -386,6 +405,7 @@ main::after {
     flex-wrap: wrap;
     max-height: 22em;
     text-align: left;
+    margin-bottom: 1.5em;
     padding: 3em;
   }
 
@@ -409,6 +429,16 @@ main::after {
   .pricing-card button {
     width: 10.625em;
     margin-top: 1.5em;
+  }
+
+  .sign-up .introduction {
+    display: block;
+    text-align: center;
+  }
+
+  .sign-up p {
+    width: clamp(6em, 35em, 35em);
+    margin: 0 auto;
   }
 }
 
