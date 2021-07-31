@@ -54,8 +54,8 @@ h1 {
   font-size: 2.5rem;
 }
 
-h1, 
-h2, 
+h1,
+h2,
 h3 {
   color: var(--bg-dark);
 }
@@ -220,7 +220,7 @@ main::after {
   margin: 0;
 }
 
-.introduction  p {
+.introduction p {
   color: var(--bg-gray);
   line-height: 1.625em;
   margin: 1.5em 0;
@@ -250,7 +250,7 @@ main::after {
   color: var(--bg-white);
 }
 
-.pricing-card:nth-child(even) h2, 
+.pricing-card:nth-child(even) h2,
 .pricing-card:nth-child(even) h3 {
   color: var(--bg-white);
 }
@@ -341,12 +341,16 @@ main::after {
 }
 
 .light .time-unit {
-  color: var(--bg-medium-blue)
+  color: var(--bg-medium-blue);
 }
 
+/* ~~~~~~~~~~~~~ */
+/* TABLET STYLES */
+/* ~~~~~~~~~~~~~ */
 @media screen and (min-width: 768px) {
   #root {
-    background: url(../assets/home/bg-pattern-header.svg) top -164px right -293px no-repeat;
+    background: url(../assets/home/bg-pattern-header.svg) top -164px right -293px
+      no-repeat;
     background-size: 86vw;
     position: relative;
   }
@@ -364,7 +368,7 @@ main::after {
   main::after {
     content: "";
     background: url(../assets/home/bg-pattern-footer.svg) bottom -483px center no-repeat,
-                var(--bg-dark);
+      var(--bg-dark);
     background-size: 1454px;
     height: var(--tablet-footer-size);
   }
@@ -391,6 +395,10 @@ main::after {
     width: clamp(6em, 21.5em, 21.5em);
   }
 
+  .intro-pitch {
+    flex-grow: 1;
+  }
+
   .chart-img {
     order: 1;
   }
@@ -411,7 +419,7 @@ main::after {
 
   .pricing-card:nth-child(even) {
     background: url(../assets/home/bg-pattern-pricing.svg) center left -319px no-repeat,
-                var(--bg-medium-blue);
+      var(--bg-medium-blue);
   }
 
   .pricing-card h2 {
@@ -451,6 +459,26 @@ main::after {
   }
 }
 
+/* ~~~~~~~~~~~~~~ */
+/* DESKTOP STYLES */
+/* ~~~~~~~~~~~~~~ */
 @media screen and (min-width: 1440px) {
-  
+  .pricing-cards {
+    display: flex;
+    gap: 1.875em;
+    justify-content: center;
+  }
+
+  .pricing-card {
+    display: block;
+    max-height: 31.75rem;
+    text-align: center;
+    padding: 2.5em 3.75em;
+  }
+
+  .pricing-card:nth-child(even) {
+    background: url(../assets/home/bg-pattern-pricing.svg) bottom center
+        no-repeat,
+      var(--bg-medium-blue);
+  }
 }
