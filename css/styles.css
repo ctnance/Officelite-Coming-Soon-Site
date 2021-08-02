@@ -380,27 +380,19 @@ main::after {
 
   .introduction {
     display: flex;
-    flex-direction: row;
     align-items: center;
+    justify-content: center;
     gap: 4em;
     text-align: left;
     margin-bottom: 8.75em;
   }
 
-  .introduction h1 {
-    width: 8.5em;
-  }
-
-  .introduction p {
-    width: clamp(6em, 21.5em, 21.5em);
-  }
-
   .intro-pitch {
-    flex-grow: 1;
+    width: clamp(8.5em, 21.56em, 21.56em);
   }
-
   .chart-img {
     order: 1;
+    width: auto;
   }
 
   .chart-img img {
@@ -463,10 +455,56 @@ main::after {
 /* DESKTOP STYLES */
 /* ~~~~~~~~~~~~~~ */
 @media screen and (min-width: 1440px) {
+  #root {
+    background: url(../assets/home/bg-pattern-header.svg) top -419px right -350px
+      no-repeat;
+    background-size: 1134px;
+  }
+
+  header {
+    padding: 5.625em 10.25em 0;
+  }
+
+  main {
+    padding: 0 10.25em 5.625em;
+  }
+
+  /* UPDATE LATER */
+  main::after {
+    height: var(--desktop-footer-size);
+    height: 723px;
+  }
+
+  .introduction {
+    gap: 5.9375em;
+  }
+
+  .intro-pitch {
+    width: clamp(16em, 33.75em, 33.75em);
+  }
+
+  .intro-pitch h1 {
+    max-width: 10em;
+    font-size: 3.5rem;
+    line-height: 4rem;
+  }
+
+  .intro-pitch p {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    margin: 1.5rem 0 2rem;
+  }
+
+  .chart-img img {
+    max-width: 475px;
+  }
+
   .pricing-cards {
     display: flex;
     gap: 1.875em;
     justify-content: center;
+    margin-bottom: 5.125em;
+    width: 100%;
   }
 
   .pricing-card {
@@ -474,6 +512,7 @@ main::after {
     max-height: 31.75rem;
     text-align: center;
     padding: 2.5em 3.75em;
+    flex-grow: 1;
   }
 
   .pricing-card:nth-child(even) {
@@ -492,5 +531,13 @@ main::after {
 
   .pricing-card ul {
     margin: 3.5em 0 2em;
+  }
+
+  .pricing-card button {
+    margin: 0;
+  }
+
+  .timer > p {
+    margin: 0;
   }
 }
