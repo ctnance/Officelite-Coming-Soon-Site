@@ -468,11 +468,9 @@ main::after {
   main {
     padding: 0 10.25em 5.625em;
   }
-
-  /* UPDATE LATER */
+  
   main::after {
-    height: var(--desktop-footer-size);
-    height: 723px;
+    height: 36.5%;
   }
 
   .introduction {
@@ -513,6 +511,7 @@ main::after {
     text-align: center;
     padding: 2.5em 3.75em;
     flex-grow: 1;
+    max-width: 400px;
   }
 
   .pricing-card:nth-child(even) {
@@ -539,5 +538,61 @@ main::after {
 
   .timer > p {
     margin: 0;
+  }
+
+  /* SIGN UP PAGE STYLES */
+  #root {
+    background-image: none;
+  }
+  
+  .sign-up {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: start;
+    margin-top: 7.875em;
+  }
+
+  .sign-up::after {
+    background: url(../assets/home/bg-pattern-footer.svg) bottom -231px right -853px no-repeat,
+      var(--bg-dark);
+    background-size: 2036px;
+    top: 0;
+    left: 71.16%;
+    width: 29.16%;
+    min-height: 100vh;
+  }
+
+  .sign-up .introduction {
+    text-align: left;
+    margin: 0;
+  }
+
+  .sign-up .introduction h1 {
+    font-size: 3.5rem;
+    font-size: 56px;
+    width: 10em;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .sign-up .introduction p {
+    width: clamp(10em, 30em, 30em);
+    margin: 0;
+  }
+
+  .sign-up .timer p {
+    text-align: left;
+  }
+  
+  .sign-up .time-elements {
+    justify-content: flex-start;
+  }
+
+  .sign-up form {
+    grid-area: 1 / 2 / 3 / 2;
+    justify-self: end;
+    max-width: 445px;
+    margin: 0;
+    padding: 3.125em 2.625em;
   }
 }
