@@ -291,7 +291,7 @@ main::after {
 
 /* TIMER STYLES */
 
-.timer p {
+.timer > p {
   color: var(--bg-white);
   text-transform: uppercase;
   text-align: center;
@@ -299,10 +299,6 @@ main::after {
   line-height: 3em;
   font-weight: 700;
   margin-bottom: 1em;
-}
-
-.light p {
-  color: var(--bg-dark);
 }
 
 .timer .date {
@@ -320,24 +316,37 @@ main::after {
   background-color: var(--bg-dark-blue);
   color: var(--bg-gray);
   border-radius: 0.25em;
-  display: flex;
-  flex-direction: column;
   padding: 0.625em 1em;
-  font-size: 0.75rem;
   font-weight: 700;
   text-transform: lowercase;
   line-height: 1.75rem;
+  flex: 1 1 0px;
 }
 
-.light .time-element {
-  background-color: var(--bg-light-blue);
+.time-element p {
+  margin: 0;
 }
 
 .time-unit {
   display: inline-block;
   color: var(--bg-white);
   font-size: 2rem;
-  line-height: 48px;
+  line-height: 1.5em;
+}
+
+.time-unit-text {
+  color: var(--bg-gray);
+  font-size: 0.75rem;
+  line-height: 2.333em;
+}
+
+.light p {
+  color: var(--bg-dark);
+}
+
+.light .time-element {
+  background-color: var(--bg-light-blue);
+  /* background-color: hsl(227, 100%, 92%); */
 }
 
 .light .time-unit {
@@ -429,6 +438,26 @@ main::after {
   .pricing-card button {
     width: 10.625em;
     margin-top: 1.5em;
+  }
+
+  .time-elements {
+    max-width: 28em;
+    margin: 0 auto 3em;
+  }
+
+  .time-element {
+    border-radius: 0.75em;
+    padding: 1em;
+  }
+
+  .time-unit {
+    font-size: 3.5rem;
+    line-height: 1.1em;
+  }
+  
+  .time-unit-text {
+    font-size: 1rem;
+    line-height: 1.75em;
   }
 
   .sign-up::after {
