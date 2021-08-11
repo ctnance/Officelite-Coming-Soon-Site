@@ -309,7 +309,8 @@ main::after {
   display: flex;
   justify-content: center;
   gap: 0.8em;
-  margin-bottom: 2.5em;
+  max-width: 25em;
+  margin: 0 auto 2.5em;
 }
 
 .time-element {
@@ -502,7 +503,7 @@ main::after {
   }
   
   main::after {
-    background: url(../assets/home/bg-pattern-footer.svg) center right 131px no-repeat,
+    background: url(../assets/home/bg-pattern-footer.svg) bottom -819px right 131px no-repeat,
       var(--bg-dark);
     background-size: 2036px;
     height: 36.5%;
